@@ -400,6 +400,7 @@ Router Links
   endpoint  in   23       60           mobile  sensubility/telemetry               0    250  0    0      0       1        0        0       1        0    0    0    0      0
   endpoint  in   23       61           mobile  sensubility/telemetry               0    250  0    0      0       1        0        0       1        0    0    0    0      0
 ...
+~~~
 
 19. Validating installation on RHOCP side
 19.1 List the available AMQ Interconnect pods:
@@ -431,7 +432,7 @@ Connections
   34  127.0.0.1:59070     0575aaf2-f97a-4c7a-b8fe-9f24aeac0cdd         normal  in   no-security                             no-auth                 000:00:00:00  000:00:00:00
 ~~~
 
-19.2 To view the number of messages delivered by the network, use each address with the oc exec command:
+19.3 To view the number of messages delivered by the network, use each address with the oc exec command:
 ~~~
 [root@bastion stf-working-dir]# oc exec -it default-interconnect-668d5bbcd6-htl8b -- qdstat --address
 2021-11-09 09:33:52.496591 UTC
