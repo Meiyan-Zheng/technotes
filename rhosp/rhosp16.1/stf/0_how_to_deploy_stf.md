@@ -433,7 +433,7 @@ Connections
 
 19.2 To view the number of messages delivered by the network, use each address with the oc exec command:
 ~~~
-# oc exec -it default-interconnect-668d5bbcd6-htl8b -- qdstat --address
+[root@bastion stf-working-dir]# oc exec -it default-interconnect-668d5bbcd6-htl8b -- qdstat --address
 2021-11-09 09:33:52.496591 UTC
 default-interconnect-668d5bbcd6-htl8b
 
