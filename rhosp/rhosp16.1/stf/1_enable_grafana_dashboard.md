@@ -109,4 +109,5 @@ grafana-route-service-telemetry.apps.ocp4.example.com
 11. In a web browser, navigate to https://grafana-route-service-telemetry.apps.ocp4.example.com
 Sign in with **root/secret**:
 
+<img width="1440" alt="Screen Shot 2021-11-10 at 3 41 37 PM" src="https://user-images.githubusercontent.com/30589773/141070618-f37afe58-6c06-49b1-b1ef-6721b9589b1d.png">
 
