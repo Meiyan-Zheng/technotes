@@ -111,3 +111,10 @@ Sign in with **root/secret**:
 
 <img width="1440" alt="Screen Shot 2021-11-10 at 3 41 37 PM" src="https://user-images.githubusercontent.com/30589773/141070618-f37afe58-6c06-49b1-b1ef-6721b9589b1d.png">
 
+12. You should able to see 5 Dashboards in `service-telemetry` folder: 
+
+<img width="1440" alt="Screen Shot 2021-11-10 at 4 08 01 PM" src="https://user-images.githubusercontent.com/30589773/141074522-a67ff634-b993-4f59-a063-0776be5354d7.png">
+
+13. And you should able to see the data in each dashboard: 
+
+ <img width="1440" alt="Screen Shot 2021-11-10 at 4 10 03 PM" src="https://user-images.githubusercontent.com/30589773/141074679-e33e00be-6640-4622-a0cc-37e1eeeeb3ab.png">
