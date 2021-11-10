@@ -217,6 +217,8 @@ status:
 # oc get routes -ogo-template='{{ range .items }}{{printf "%s\n" .spec.host }}{{ end }}' | grep "\-5671"
 default-interconnect-5671-service-telemetry.apps.ocp4.example.com
 ~~~
+
+### On RHOSP Side: 
 15. Create a tripleo template file called `enable-stf.yaml`:
 ~~~
 $ cat enable-stf.yaml 
@@ -353,7 +355,7 @@ openstack overcloud deploy --override-ansible-cfg /home/stack/ansible.cfg \
  --log-file overcloud-deployment.log
 ~~~
 
-18. Validating installation on RHOSP side: 
+### Validating installation on RHOSP side: 
 18.1 Ensure that the `metrics_qdr` container is running on the node:
 ~~~
 [root@overcloud-controller-0 ~]# sudo podman container inspect --format '{{.State.Status}}' metrics_qdr
@@ -402,7 +404,7 @@ Router Links
 ...
 ~~~
 
-19. Validating installation on RHOCP side
+### Validating installation on RHOCP side
 19.1 List the available AMQ Interconnect pods:
 ~~~
 [root@bastion stf-working-dir]# oc get pods -l application=default-interconnect
