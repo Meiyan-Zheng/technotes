@@ -1,4 +1,4 @@
-## OVS-DPDK troulbeshoot guide 
+## OVS-DPDK troubleshoot guide 
 
 ### Related template files
 
