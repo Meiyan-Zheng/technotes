@@ -41,3 +41,19 @@ If you don't see a command prompt, try pressing enter.
 sh-4.4# 
 ~~~
 
+4. Opens a shell inside a pod to run shell commands interactively and non-interactively.
+~~~
+[root@ocpclient ~]# oc rsh osp-director-operator-controller-manager-5545756d8c-4hcs8  
+Defaulted container "manager" out of: manager, kube-rbac-proxy
+sh-4.4# 
+~~~
+
+5. Copies local files to a location inside a pod:
+~~~
+[root@ocpclient ~]#oc cp /local/path my-pod-name:/container/path
+~~~
+
+6. Creates a TCP tunnel from local-port on your workstation to local-port on the pod:
+~~~
+[root@ocpclient ~]#oc port-forward my-pod-name local-port:remote-port
+~~~
