@@ -13,6 +13,11 @@ sriov-network-config-daemon-q6wft                                 3/3     Runnin
 sriov-network-operator-8699d87676-cljn8                           1/1     Running     0               21h
 ~~~
 
+More information with `--loglevel` option: 
+~~~
+[root@ocpclient ~]# oc get pod --loglevel 10
+~~~
+
 2. Get log for particular pod:
 ~~~
 [root@ocpclient ~]# oc logs -n openstack operator-webhook-lghcj   
