@@ -26,3 +26,18 @@ error: a container name must be specified for pod osp-director-operator-controll
 [root@ocpclient ~]# oc logs -n openstack osp-director-operator-controller-manager-5545756d8c-4hcs8 -c manager
 ...
 ~~~
+
+3. Create a troubleshooting pod from deployment:
+~~~
+[root@ocpclient ~]# oc get deployment
+NAME                                       READY   UP-TO-DATE   AVAILABLE   AGE
+osp-director-operator-controller-manager   1/1     1            1           2d4h
+sriov-network-operator                     1/1     1            1           22h
+
+[root@ocpclient ~]# oc debug deployment/sriov-network-operator --as-root
+Starting pod/sriov-network-operator-debug, command was: sriov-network-operator --leader-elect
+Pod IP: 10.128.0.146
+If you don't see a command prompt, try pressing enter.
+sh-4.4# 
+~~~
+
