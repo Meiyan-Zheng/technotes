@@ -105,3 +105,14 @@ SUSHY_EMULATOR_BOOT_LOADER_MAP = {
     "@odata.id": "/redfish/v1/Systems",
     "@Redfish.Copyright": "Copyright 2014-2016 Distributed Management Task Force, Inc. (DMTF). For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright."
 ```
+
+7. You should be able to flip its power state via the Redfish call:
+```
+# curl -d '{"ResetType":"On"}' -H "Content-Type: application/json" -X POST http://localhost:8000/redfish/v1/Systems/f091dec2-5660-4c71-b941-23134b6e1ea2/Actions/ComputerSystem.Reset
+# curl -d '{"ResetType":"ForceOff"}' -H "Content-Type: application/json" -X POST http://localhost:8000/redfish/v1/Systems/f091dec2-5660-4c71-b941-23134b6e1ea2/Actions/ComputerSystem.Reset
+```
+    
+#### References: 
+    
+[1] https://docs.openstack.org/sushy-tools/latest/user/dynamic-emulator.html \
+[2] https://github.com/vhernandomartin/ocp4-ipibm-scripts
